@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    background-color: rgba(30, 30, 36, 0.8);
+
+}
+.namecolor{
+    color: rgb(0, 208, 0);
+}
+.logo_icon{
+    margin-bottom: -3%;
+    width: 9%;
+    height: auto;
+}
+.Logo {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navmenu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navmenu a {
+    display: inline-block;
+    margin: 0 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    transition: all 0.6s;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navmenu a:hover {
+    transform: translateY(-8px);
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 15%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 10rem;
+    gap: 1rem;
+}
+
+.home-img img {
+    margin-top: 10%;
+    height: 80%;
+    
+    width: 50%;
+    height: auto;
+    margin-left: 10rem;
+    border-radius: 10%;
+}
+
+.home-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.abouth2{
+    padding-top: 2%;
+    text-align: center;
+}
+.about-section{
+    width: 90%;
+    margin-left: 5%;
+}
+.aboutp{
+    text-align: center;
+    text-align: justify;
+}
+.lista{
+    margin-left: 5%;
+}
+.icons{
+    margin-left: 5%;
+}
+.icons img{
+    width: 5%;
+    height: auto;
+    margin: 3%;
+    transition: transform .5s;
+}
+.icons img:hover{
+    transform: scale(2)
+}
+.proglanguage{
+    text-align: center;
+}
+
+.home-text h3 {
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-text h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+
+.home-text p {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f7f7f2;
+    border: 1px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px);
+}
+
+.socials-icons {
+    position: absolute;
+    top: 40%;
+    padding: 0 8rem;
+}
+
+.socials-icons i {
+    display: block;
+    margin: 25px 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.6s;
+}
+
+.socials-icons i:hover {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+
+.scroll-btn {
+
+    position: absolute;
+    bottom: 7%;
+    left: 9%;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .5s;
+    animation: shake 0.5s;
+}
+
+
+.scroll-btn:hover{
+    transform: scale(1.5);
+}
+
+
+.about-section {
+    display: block;
+    padding: 100px;
+    background-color: #000000;
+    transition: opacity 0.5s ease-in-out;
+}
+.about-section p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+.about-section h3{
+    font-size: 1.5rem;
+}
+.about-section ul,ol{
+    margin-left: 4rem;
+}
+.about-section .abouth3 {
+    margin-left: 2rem;
+}
+footer {
+    background-color: rgba(30, 30, 36, 0.8);
+    color: #fff; 
+    text-align: center; 
+    padding: 5px 0; 
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* Contact css */
+.contact {
+    padding: 50px 0;
+    text-align: center; 
+}
+
+.contact-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    margin-top: 5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    height: 558px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 1px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e24; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #333; 
+}
+
+/* project css */
+.project{
+    text-align: center;
+    margin-top: 10%;
+}
+.project h1{
+    font-size: 200%;
+}
+.collect{
+    display: flex;
+    align-items: center;
+    margin-left: 22%;
+
+}
+div.project_collection{
+    margin: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 20%;
+    height: 430px;
+    padding: 1%;
+    background-color: white;
+    color: black;
+    display: fixed;
+}
+.project_collection:hover{
+    background-color: #333;
+    color: white;
+}
+img.pimg{
+    margin-top: 7%;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 7%;
+    border: 1px solid black;
+}
+
+.project {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project1 {
+    background-image: url('1.png');
+}
+
+.project2 {
+    background-image: url('2.png');
+}
+
+.project3 {
+    background-image: url('3.png');
+}
+
+div.desc {
+    padding: 0;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.rgb{
+    width: 20%;
+    height: auto;
+}
+.lbl{
+    border: 1px solid black;
+    width: 25%;
+    padding: .5%;
+    position: relative;
+    text-align: center;
+    font-size: .8em;
+    margin: 1%;
+}
+.label{
+    margin-top: 5%;
+    display: flex;
+}
+
+.header-box-for-menu {
+    display: none;
+}
+
+label {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .navmenu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        padding: 1rem;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .navmenu {
+        display: flex;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .home-img img {
+        display: block;
+    }
+
+    .home-text h2 {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .header-box-for-menu {
+        display: block;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    .project_collection {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .label {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lbl {
+        width: 80%;
+    }
+
+    .scroll-btn,
+    .socials-icons {
+        display: none; /* hide decorative or less essential elements on small screens */
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.75rem;
+        width: 100%;
+    }
+
+    .header-box-for-menu {
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .navmenu a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-img img {
+        display: block;
+        margin-left: 25%;
+    }
+
+    .about-section {
+        padding: 1px;
+        margin-left: 10%;
+        font-size: 18px;
+    }
+
+    .collect {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    div.project_collection{
+        margin: 2%;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 60%;
+        height: 430px;
+        padding: 1%;
+        background-color: white;
+        color: black;
+        display: fixed;
+    }
+
+    .project h1 {
+        font-size: 1.5rem;
+    }
+
+    .scroll-btn,
+    .socials-icons {
+        display: none;
+    }
+
+    .lbl {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .label {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-box-for-menu {
+        display: block;
+    }
+}
+
+
+
